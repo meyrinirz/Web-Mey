@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Wisata Budaya Buton Tengah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Pendaftaran Pengguna</h2>
+        <form id="registerForm">
+            <div class="input-group">
+                <label for="fullname">Nama Lengkap:</label>
+                <input type="text" id="fullname" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+            </div>
+            <button type="submit" class="submit-btn">Daftar</button>
+        </form>
+        <p>Sudah punya akun? <a href="index.html">Cari Lokasi Wisata</a></p>
+    </div>
+    
+    <script>
+        document.getElementById("registerForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Pendaftaran berhasil! Silakan cari lokasi wisata.");
+            window.location.href = "index.html";
+        });
+    </script>
+</body>
+</html>
